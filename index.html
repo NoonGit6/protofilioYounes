@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code & Creativity: Showcasing the Frontend Journey</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <!-- header burger menu and logo -->
+    <header>
+        <a id="logo" href="">RayanDev</a>
+        <nav>
+            <ul id="sidebar" class="sidebar">
+            <li onclick="closeSidebar();"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+            </ul>  
+            <ul>
+            
+            <li onclick="showSidebar();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
     
+    <!-- home about me skills projects contact sections -->
+    <main>
+        <div class="developer-card">
+            <div class="LsRs">
+                <h2 class="title">RayanDev</h2>
+                <p>FullStack Deverloper</p>
+            </div>
+            <div class="Else">
+                <img src="src/img/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd.jpg" alt="Personal Image">
+                <h4>RayanDev@gmail.com</h4>
+                <h4>Based in Lile,France</h4>
+                <p>© 2024 RayanDev. All Rights Reserved</p>
+                <div class="social-media">
+                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-tiktok' ></i>
+                    <i class='bx bxl-github' ></i>
+                </div>
+                <button class="hire-btn">Hire Me <i class='bx bx-mail-send'></i></button>
+    
+            </div>
+        </div>
+        <!-- home section here -->
+        <section class="home-container">
+            <p class="border"><i class='bx bx-home'></i> Home</p>
+            <div class="writing-info">
+                <p>Welcome to the web page of a skilled and versatile <span>Full Stack</span> Developer!</p>
+            </div>
+            <p class="description">Are you looking for a dynamic and experienced Full Stack Developer to bring your digital ideas to life? Look no further! I am a passionate and dedicated professional with a proven track record of crafting robust, scalable, and user-friendly web applications.</p>
+            <div class="two-numbers">
+                <div class="Num">
+                    <h4>3+</h4>
+                    <p>YEARS OF EXPERIENCE</p>
+                </div>
+                <div class="Num">
+                    <h4>13+</h4>
+                    <p>PROJECTS COMPLETED</p>
+                </div>
+            </div>
+        </section>
+        <!-- about section here -->
+        <section class="section-container">
+            <p class="border2"><i class='bx bxs-user-circle' ></i> about</p>
+            <div class="about-me">
+                <h3>Hello! I'm <span>Rayan</span>, a dedicated and skilled <span>Full Stack</span> Developer with a passion for crafting innovative web solutions.</h3>
+                <p>My journey as a developer began with a strong foundation in HTML, CSS, and JavaScript. Over time, I expanded my skill set to include frameworks such as <span>React</span> and <span>Angular</span> for front-end development, and <span>Node.js</span> and <span>Django</span> for back-end development. By leveraging these technologies, I have successfully delivered scalable and user-friendly applications that meet and exceed client expectations.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/HumbergerMenu.js"></script>
 </body>
 </html>

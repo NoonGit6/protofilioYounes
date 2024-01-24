@@ -189,9 +189,10 @@ nav a:hover {
 .Else p {
     margin-top: 30px;
     color: #aaaaaa;
+    margin-bottom: 30px;
 }
 
-.social-media{
+.social-media a{
     margin-top: 30px;
     font-size: 1.7em;
     color: #ffffff;

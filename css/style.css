@@ -462,3 +462,254 @@ about me section here
     text-align: center;
     align-items: center;
 }
+
+/* contact css */
+
+.contact-container {
+    background: linear-gradient(355deg, #000000, #1d1d1d);
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.contact-container h4{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 500;
+}
+.contact-container h4 span {
+    color: #707070;
+}
+.emaily{
+    position: absolute;
+    top: 22%;
+    left: 40%;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.border4 {
+    border: 1px solid #ffffff;
+    width: 125px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.forms2{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 30%;
+    left: 65%;
+}
+.forms p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+.forms2 p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+.forms label {
+    margin-top: 30px;
+}
+.forms2 label {
+    margin-top: 30px;
+}
+
+.contact-container input {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #aaaaaa;
+    color: #fff;
+}
+.contact-container textarea {
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    display: inline-block;
+    transition: .3s all ease;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+.inputfile + label {
+	cursor: pointer;
+}
+#file-chosen {
+    color: white;
+    margin-top: 10px;
+}
+
+.Send-btn {
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    padding: 12px;
+    font-weight: 600;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+}
+.Send-btn:hover {
+    background: transparent;
+    color: white;
+    border-radius: 0;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #ffffff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #000000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #000000;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../src/img/wave.png);
+    background-size: 1000px 100px;
+  }
+  
+  .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+  }
+  
+  .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+  }
+  
+  .wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+  }
+  
+  .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+  }
+  
+  @keyframes animateWaves {
+    0% {
+      background-position-x: 1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position-x: -1000px;
+    }
+    100% {
+      background-positon-x: 0px;
+    }
+  }

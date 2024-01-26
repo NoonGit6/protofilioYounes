@@ -22,7 +22,6 @@
             <li><a href="">Contact</a></li>
             </ul>  
             <ul>
-            
             <li onclick="showSidebar();"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
@@ -38,13 +37,13 @@
             <i class='bx bx-folder-open'></i>
             <i class='bx bx-send'></i>
         </div>
-        <div class="developer-card">
+        <div id="card" class="developer-card">
             <div class="LsRs">
                 <h2 class="title">RayanDev</h2>
                 <p>FullStack Deverloper</p>
             </div>
             <div class="Else">
-                <img src="src/img/360_F_601171862_l7yZ0wujj8o2SowiKTUsfLEEx8KunYNd.jpg" alt="Personal Image">
+                <img src="src/img/personal pic.png" alt="Personal Image">
                 <h4>RayanDev@gmail.com</h4>
                 <h4>Based in Lile,France</h4>
                 <p>© 2024 RayanDev. All Rights Reserved</p>
@@ -201,15 +200,54 @@
             </div>
         </section>
         <!-- contact section code -->
-        <section class="contact-container">
-            
+        <section onclick="disappear();" class="contact-container">
+            <h3 class="border4"><i class='bx bxs-chat'></i> contact</h3>
+            <h4>Let's Work <span>Together!</span></h3>
+            <p class="emaily">RayanDev@gmail.com</p>
+            <div class="forms">
+                <label for="">
+                    <p>Full Name</p>
+                    <input type="text" name="username" id="username">
+                </label>      
+                <label for="">
+                    <p>PHONE (OPTIONAL)</p>
+                    <input type="text" name="phone" id="phone">
+                </label>      
+                <label for="">
+                    <p>YOUR BUDGET (OPTIONAL)</p>
+                    <input type="text" name="budget" id="budget">
+                </label>      
+                <label for="">
+                    <p>MESSAGE</p>
+                    <textarea name="message" id="message" cols="60" rows="4" maxlength="200"></textarea>
+                </label>      
+            </div>
+            <div class="forms2">
+                <label for="">
+                    <p>EMAIL</p>
+                    <input type="email" name="email" id="email">
+                </label>
+                <input type="file" name="file" id="file" class="inputfile"/>
+                <label for="file"><i class='bx bx-cloud-upload'></i> ADD AN ATTACHMENT</label>
+                <span id="file-chosen">No file chosen</span>
+            </div>
+            <button class="Send-btn">SEND MESSAGE</button>
         </section>
     </main>
 
-    <footer>
-
-    </footer>
-
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        </ul>
+        <p>© 2024 RayanDev. All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/attachment.js"></script>
     <script src="js/HumbergerMenu.js"></script>
 </body>
 </html>
